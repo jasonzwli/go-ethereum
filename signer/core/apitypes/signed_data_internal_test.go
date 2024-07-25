@@ -245,6 +245,7 @@ func TestConvertAddressDataToSlice(t *testing.T) {
 }
 
 func TestTypedDataArrayValidate(t *testing.T) {
+	t.Parallel()
 
 	typedData0 := TypedData{
 		Types: Types{
@@ -2686,6 +2687,8 @@ func TestTypedDataArrayValidate(t *testing.T) {
 		tc := tt
 
 		t.Run(name, func(t *testing.T) {
+			t.Parallel()
+
 			td := tc.Fields.Input
 
 			domainSeparator, err := td.HashStruct("EIP712Domain", td.Domain.Map())
