@@ -2615,7 +2615,7 @@ func TestTypedDataArrayValidate(t *testing.T) {
 			}, Want: want{
 				digest:      "0x09311d5cc4e0d26af26c78438f55094fdf489083cd75223073db9a0a5da22b84",
 				domainHash:  "0x94c78e94e233546655365725a17a437f48bb870b898e35b894da4a0887172dc2",
-				messageHash: "0x81203a474f76afd1376c9f00b3947b5b7e89a73b13b165f999d540377bb1c2fb", // 0x369514af6e781a85186ef2c059e0d9e7b14e5d58a95970655794439eca7f3f7e
+				messageHash: "0x81203a474f76afd1376c9f00b3947b5b7e89a73b13b165f999d540377bb1c2fb",
 			},
 		},
 		"single-dimension": {
@@ -2624,7 +2624,7 @@ func TestTypedDataArrayValidate(t *testing.T) {
 			}, Want: want{
 				digest:      "0xa51998e192ae3b3f551e481205b3e84f47041cd1fdccc6ebeb84d09dbaa9163c",
 				domainHash:  "0x94c78e94e233546655365725a17a437f48bb870b898e35b894da4a0887172dc2",
-				messageHash: "0x449764b1b6c14b5c3d2b69ca5f112e4172feefc49d9712be588862d606d82552", // 0x369514af6e781a85186ef2c059e0d9e7b14e5d58a95970655794439eca7f3f7e
+				messageHash: "0x449764b1b6c14b5c3d2b69ca5f112e4172feefc49d9712be588862d606d82552",
 			},
 		},
 		"two-dimension": {
