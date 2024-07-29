@@ -211,7 +211,7 @@ type Type struct {
 
 // isArray returns true if the type is a fixed or variable sized array
 func (t *Type) isArray() bool {
-	return len(strings.Split(t.Type, "[")[0]) > 1
+	return len(strings.Split(t.Type, "[")) > 1
 }
 
 // typeName returns the canonical name of the type. If the type is 'Person[]' or 'Person[2]', then
